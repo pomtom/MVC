@@ -92,4 +92,3 @@ D:\Try\MVC\MVC\obj\Debug\MVC.csproj.CoreCompileInputs.cache
 D:\Try\MVC\MVC\obj\Debug\MVC.csproj.CopyComplete
 D:\Try\MVC\MVC\obj\Debug\MVC.dll
 D:\Try\MVC\MVC\obj\Debug\MVC.pdb
-D:\Try\MVC\MVC\obj\Debug\MVC.csprojAssemblyReference.cache

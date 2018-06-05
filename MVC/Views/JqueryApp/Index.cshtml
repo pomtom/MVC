@@ -1,0 +1,69 @@
+﻿@model IEnumerable<MVC.Models.Employee>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@*<script type="text/javascript">
+    $(document).ready(function () {
+
+        $('#btngetemployee').click(function () {
+            GetAllEmployee();
+        });
+
+        function GetAllEmployee() {
+            $.ajax({
+                url: '/JqueryApp/GetAllEmployee',
+                dataType: 'json',
+                method: 'get',
+                success: function (data) {
+                    var employeetable = $('table tbody');
+                    employeetable.empty();
+                    $(data).each(function (index, emp) {
+                        employeetable.append('<tr><td>' + emp.Id + '</td><td>' + emp.Name + '</td><td>' + emp.Gender +
+                            '</td><td>' + emp.Email + '</td><td>' + emp.Salary + '</td></tr>');
+                    });
+                },
+                error: function (err) {
+                    alert(err.statusText);
+                    console.log(err.responseText);
+                }
+            });
+        }
+    });
+</script>*@
+
+<div>
+    <h2>Index</h2>
+
+    <input type="button" id="btngetemployee" value="GetEmployee"  class="btn-secondary"/>
+    <br />
+    <br />
+    @Html.ActionLink("Create Employee", "Create")
+    <br />
+    <br />
+    <table class="table">
+        <thead>
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.Id)</th>
+                <th>@Html.DisplayNameFor(model => model.Name)</th>
+                <th>@Html.DisplayNameFor(model => model.Gender)</th>
+                <th>@Html.DisplayNameFor(model => model.Email)</th>
+                <th>@Html.DisplayNameFor(model => model.Salary)</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+        @*@foreach (var item in Model)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(modelItem => item.Id)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Name)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Gender)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Email)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Salary)</td>
+                    <td>@Html.DisplayFor(modelItem => item.SelectedDepartmentId)</td>
+                    <td>@Html.ActionLink("Edit", "Edit", new { id = item.Id })</td>
+                    <td>@Html.ActionLink("Delete", "Delete", new { id = item.Id })</td>
+                </tr>
+            }*@
+    </table>
+</div>
