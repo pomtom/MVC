@@ -4,37 +4,8 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-@*<script type="text/javascript">
-        $('#btncreate').click(function () {
-            var employee = {};
-
-            employee.Name = $('#txtname').val();
-            employee.Salary = $('#txtsalary').val();
-            employee.Email = $('#txtemail').val();
-            employee.Gender = $('#txtgender').val();
-
-            $.ajax({
-                url: '/JqueryApp/Create',
-                contentType: 'application/json; charset=utf-8',
-                method: 'post',
-                data: '{emp:' + JSON.stringify(employee) + '}',
-                success: function (data) {
-
-                },
-                error: function (err) {
-
-                }
-            });
-        });
-    </script>*@
-
 <div style="font-family:Arial">
     <h2>Create Employee</h2>
-
-    @*@using (Html.BeginForm())
-        {
-
-        }*@
 
     <table class="table">
         <tr>
@@ -65,9 +36,13 @@
 
         <tr>
             <td>@Html.LabelFor(model => model.Departments.Name, htmlAttributes: new { @class = "control-label col-md-2" })</td>
-            <td>@Html.DropDownListFor(x => Model.SelectedDepartmentId, new SelectList(Model.DeptList, "Id", "Name"), "-- Select Department --", htmlAttributes: new { @class = "form-control" })</td>
+            <td>@Html.DropDownListFor(x => Model.SelectedDepartmentId, new SelectList(Model.DeptList, "Id", "Name"), "-- Select Department --", htmlAttributes: new { @id = "ddlvalue", @class = "form-control" })</td>
         </tr>
     </table>
 
     <input id="btncreate" type="button" value="Create" class="btn btn-primary" />
+</div>
+
+<div id="LoadData">
+
 </div>

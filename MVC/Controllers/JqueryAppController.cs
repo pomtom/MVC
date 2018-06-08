@@ -17,13 +17,18 @@ namespace MVC.Controllers
 
         public JsonResult GetAllEmployee()
         {
-            List<Employee> emplist;
-            using (EmployeeDBContext context = new EmployeeDBContext())
-            {
-                emplist = context.Employees.ToList();
-            }
+            List<Employee> emplist = GetAllEmployees();
             return Json(emplist, JsonRequestBehavior.AllowGet);
         }
+
+        
+        public PartialViewResult _EmpList()
+        {
+            List<Employee> emplist = GetAllEmployees();
+            return PartialView(emplist);
+        }
+
+
         [HttpGet]
         public ActionResult Create()
         {
@@ -38,8 +43,36 @@ namespace MVC.Controllers
         [HttpPost]
         public ActionResult Create(Employee emp)
         {
-            return View();
+            if (emp != null)
+            {
+                using (EmployeeDBContext context = new EmployeeDBContext())
+                {
+                    context.Employees.Add(emp);
+                    context.SaveChanges();
+                }
+            }
+            return View("Index");
         }
 
+        public ActionResult Edit(int id)
+        {
+            Employee emp;
+            using (EmployeeDBContext context = new EmployeeDBContext())
+            {
+                emp = context.Employees.FirstOrDefault(a => a.Id == id);
+                emp.DeptList = context.Departments.ToList();
+            }
+            return View(emp);
+        }
+
+        private static List<Employee> GetAllEmployees()
+        {
+            List<Employee> emplist;
+            using (EmployeeDBContext context = new EmployeeDBContext())
+            {
+                emplist = context.Employees.ToList();
+            }
+            return emplist;
+        }
     }
 }

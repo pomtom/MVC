@@ -2,10 +2,6 @@
 
 $(document).ready(function () {
 
-    $('#btngetemployee').click(function () {
-        GetAllEmployee();
-    });
-
     function GetAllEmployee() {
         $.ajax({
             url: '/JqueryApp/GetAllEmployee',
@@ -32,14 +28,15 @@ $(document).ready(function () {
         employee.Salary = $('#txtsalary').val();
         employee.Email = $('#txtemail').val();
         employee.Gender = $('#txtgender').val();
-        debugger;
+        employee.SelectedDepartmentId = $('#ddlvalue').val();
+
         $.ajax({
             url: '/JqueryApp/Create',
             contentType: 'application/json; charset=utf-8',
             method: 'post',
             data: '{emp:' + JSON.stringify(employee) + '}',
             success: function (data) {
-                GetAllEmployee();
+                LoadIndexView();
             },
             error: function (err) {
                 alert(err.responseText);
@@ -47,4 +44,19 @@ $(document).ready(function () {
         });
     });
 
+    function LoadIndexView() {
+        $.ajax({
+            url: '/JqueryApp/_EmpList',
+            method: 'get',
+            success: function (data) {
+                $('#LoadData').html(data);
+            },
+
+            error: function (err) {
+                alert(err.statusText);
+            }
+        });
+
+
+    }
 });
