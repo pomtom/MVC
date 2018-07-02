@@ -2325,7 +2325,7 @@
             </summary>
             <remarks>
             Users can use this to plug-in custom assertions through C# extension methods.
-            For instance, the signature of a custom assertion provider could be "public static void ContainsWords(this StringAssert cusomtAssert, string value, ICollection substrings)"
+            For instance, the signature of a custom assertion provider could be "public static void ContainsWords(this StringAssert customAssert, string value, ICollection substrings)"
             Users could then use a syntax similar to the default assertions which in this case is "StringAssert.That.ContainsWords(value, substrings);"
             More documentation is at "https://github.com/Microsoft/testfx-docs".
             </remarks>
@@ -2660,7 +2660,7 @@
             </summary>
             <remarks>
             Users can use this to plug-in custom assertions through C# extension methods.
-            For instance, the signature of a custom assertion provider could be "public static void AreEqualUnordered(this CollectionAssert cusomtAssert, ICollection expected, ICollection actual)"
+            For instance, the signature of a custom assertion provider could be "public static void AreEqualUnordered(this CollectionAssert customAssert, ICollection expected, ICollection actual)"
             Users could then use a syntax similar to the default assertions which in this case is "CollectionAssert.That.AreEqualUnordered(list1, list2);"
             More documentation is at "https://github.com/Microsoft/testfx-docs".
             </remarks>
@@ -4265,6 +4265,21 @@
         <member name="P:Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.TestContextMessages">
             <summary>
             Gets or sets the debug traces by test code.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.ExecutionId">
+            <summary>
+            Gets or sets the execution id of the result.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.ParentExecId">
+            <summary>
+            Gets or sets the parent execution id of the result.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.InnerResultsCount">
+            <summary>
+            Gets or sets the inner results count of the result.
             </summary>
         </member>
         <member name="P:Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.Duration">

@@ -56,7 +56,15 @@ $(document).ready(function () {
                 alert(err.statusText);
             }
         });
+    }
 
+    function ValidateModel() {
+        if ($('#txtname').val().length == 0) {
 
+        }
+        //$('#txtname').val();
+        //$('#txtsalary').val();
+        //$('#txtemail').val();
+        //$('#txtgender').val();
     }
 });

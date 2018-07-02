@@ -1,9 +1,3 @@
-D:\Try\MVC\MVC\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-D:\Try\MVC\MVC\bin\roslyn\Microsoft.CodeAnalysis.dll
-D:\Try\MVC\MVC\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-D:\Try\MVC\MVC\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
-D:\Try\MVC\MVC\bin\roslyn\System.IO.Compression.dll
-D:\Try\MVC\MVC\bin\roslyn\VBCSCompiler.exe
 D:\Try\MVC\MVC\bin\ApplicationInsights.config
 D:\Try\MVC\MVC\bin\MVC.dll.config
 D:\Try\MVC\MVC\bin\MVC.dll
@@ -15,9 +9,13 @@ D:\Try\MVC\MVC\bin\roslyn\csi.exe
 D:\Try\MVC\MVC\bin\roslyn\csi.exe.config
 D:\Try\MVC\MVC\bin\roslyn\csi.rsp
 D:\Try\MVC\MVC\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Try\MVC\MVC\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
 D:\Try\MVC\MVC\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Try\MVC\MVC\bin\roslyn\Microsoft.CodeAnalysis.dll
 D:\Try\MVC\MVC\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Try\MVC\MVC\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
 D:\Try\MVC\MVC\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Try\MVC\MVC\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
 D:\Try\MVC\MVC\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
 D:\Try\MVC\MVC\bin\roslyn\Microsoft.Managed.Core.targets
 D:\Try\MVC\MVC\bin\roslyn\Microsoft.VisualBasic.Core.targets
@@ -26,6 +24,7 @@ D:\Try\MVC\MVC\bin\roslyn\System.Collections.Immutable.dll
 D:\Try\MVC\MVC\bin\roslyn\System.Console.dll
 D:\Try\MVC\MVC\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
 D:\Try\MVC\MVC\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Try\MVC\MVC\bin\roslyn\System.IO.Compression.dll
 D:\Try\MVC\MVC\bin\roslyn\System.IO.FileSystem.dll
 D:\Try\MVC\MVC\bin\roslyn\System.IO.FileSystem.Primitives.dll
 D:\Try\MVC\MVC\bin\roslyn\System.IO.Pipes.AccessControl.dll
@@ -47,6 +46,7 @@ D:\Try\MVC\MVC\bin\roslyn\System.Xml.XPath.XDocument.dll
 D:\Try\MVC\MVC\bin\roslyn\vbc.exe
 D:\Try\MVC\MVC\bin\roslyn\vbc.exe.config
 D:\Try\MVC\MVC\bin\roslyn\vbc.rsp
+D:\Try\MVC\MVC\bin\roslyn\VBCSCompiler.exe
 D:\Try\MVC\MVC\bin\roslyn\VBCSCompiler.exe.config
 D:\Try\MVC\MVC\bin\Antlr3.Runtime.dll
 D:\Try\MVC\MVC\bin\EntityFramework.dll
@@ -88,8 +88,8 @@ D:\Try\MVC\MVC\bin\System.Web.WebPages.Razor.xml
 D:\Try\MVC\MVC\bin\System.Web.Optimization.xml
 D:\Try\MVC\MVC\bin\Antlr3.Runtime.pdb
 D:\Try\MVC\MVC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Try\MVC\MVC\obj\Debug\MVC.csprojAssemblyReference.cache
 D:\Try\MVC\MVC\obj\Debug\MVC.csproj.CoreCompileInputs.cache
 D:\Try\MVC\MVC\obj\Debug\MVC.csproj.CopyComplete
 D:\Try\MVC\MVC\obj\Debug\MVC.dll
 D:\Try\MVC\MVC\obj\Debug\MVC.pdb
-D:\Try\MVC\MVC\obj\Debug\MVC.csprojAssemblyReference.cache

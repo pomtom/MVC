@@ -12,26 +12,26 @@
             <td>@Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "control-label col-md-2" })</td>
             @*<td>@Html.TextBoxFor(model => model.Name, new { htmlAttributes = new { id = "txtname", @class = "form-control" } })</td>*@
             <td><input id="txtname" class="form-control" type="text" name="Name" value="" /></td>
-            <td>@Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })</td>
+            <td><div class="alert-danger" display="hidden">Please enter name</div></td>
 
         </tr>
         <tr>
             <td>@Html.LabelFor(model => model.Salary, htmlAttributes: new { @class = "control-label col-md-2" })</td>
             @*<td>@Html.TextBoxFor(model => model.Salary, new { htmlAttributes = new { id = "txtsalary", @class = "form-control" } })</td>*@
             <td><input id="txtsalary" class="form-control" type="text" name="Salary" value="" /></td>
-            <td>@Html.ValidationMessageFor(model => model.Salary, "", new { @class = "text-danger" })</td>
+            <td><div class="alert-dark">Please enter salary</div></td>
         </tr>
         <tr>
             <td>@Html.LabelFor(model => model.Email, htmlAttributes: new { @class = "control-label col-md-2" })</td>
             @*<td>@Html.TextBoxFor(model => model.Email, new { htmlAttributes = new { id = "txtemail", @class = "form-control" } })</td>*@
             <td><input id="txtemail" class="form-control" type="text" name="Email" value="" /></td>
-            <td>@Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })</td>
+            <td><div class="alert-danger">Please enter email</div></td>
         </tr>
         <tr>
             <td>@Html.LabelFor(model => model.Gender, htmlAttributes: new { @class = "control-label col-md-2" })</td>
             @*<td>@Html.TextBoxFor(model => model.Gender, new { htmlAttributes = new { id = "txtdender", @class = "form-control" } })</td>*@
             <td><input id="txtgender" class="form-control" type="text" name="Gender" value="" /></td>
-            <td>@Html.ValidationMessageFor(model => model.Gender, "", new { @class = "text-danger" })</td>
+            <td><div class="alert-danger">Please enter gender</div></td>
         </tr>
 
         <tr>
@@ -40,7 +40,7 @@
         </tr>
     </table>
 
-    <input id="btncreate" type="button" value="Create" class="btn btn-primary" />
+    <input id="btncreate" type="button" value="Create" class="btn btn-primary" onclick="return ValidateModel() " />
 </div>
 
 <div id="LoadData">
